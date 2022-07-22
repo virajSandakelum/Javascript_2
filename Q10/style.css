@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.calculator {
+    display: grid;
+    background: #0bb4c0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 20px;
+    border-radius: 20px;
+}
+    
+.display { grid-area: 1 / 1 / 2 / 5; }
+.operator { grid-area: 2 / 1 / 3 / 5; }
+.number789 { grid-area: 3 / 1 / 4 / 4; }
+.number456 { grid-area: 4 / 1 / 5 / 4; }
+.number123 { grid-area: 5 / 1 / 6 / 4; }
+.div6 { grid-area: 6 / 1 / 7 / 4; }
+.eqaul-sign { grid-area: 3 / 4 / 7 / 5; }
+
+.display
+{
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.operator
+{
+    border-radius: 5px;
+    padding: 13px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number123
+{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number456
+{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.number789
+{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div6
+{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eqaul-sign
+{
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgba(252, 139, 98, 0.976);
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 100px;
+    height: 95%;
+    width: 90%;
+}
+
+.eqaul-sign > button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button
+{
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    margin: 0 6px;
+    
+}
+
+.number-button:hover {
+    background-color: red;
+}
+
+
+.number-button:focus {
+    background-color: rgba(54, 230, 23, 0.644);
+}
+
+.operator-button:hover {
+    background-color: red;
+}
+
+.operator-button:focus {
+    background-color: rgba(54, 230, 23, 0.644);
+}
+

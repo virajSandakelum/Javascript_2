@@ -1,0 +1,32 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+button
+{
+    width: 80%;
+    height: 35px;
+    margin-top: 6px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+h3
+{
+    margin-top: 1px;
+    margin-bottom: 25px;
+}
